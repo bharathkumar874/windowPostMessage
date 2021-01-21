@@ -19,7 +19,6 @@
                     writeMessage('Message from ' + e.origin, JSON.stringify(e.data));
                     e.source.postMessage("Message received at target: "+new Date(),
                         e.origin);
-                        sendMessage();
                 });
             } else {
                 window.onmessage = function (e) {
