@@ -56,12 +56,17 @@
             }, 1000)
         }
 
+        function redirectPage(){
+            window.location.href = "https://staging.cobundu.com/saml/initmobile/mcsdev4.ik?mobileclient=webbrowser&mobileurl=https://consumer-lgn.web.app/";
+        }
+
         $(document).ready(startProcedure);
 
     </script>
 </head>
 <body>
-    <h1>Consumer v6</h1>
+    <h1>Stand alone page</h1>
+    <p onclick="redirectPage()">Make redirect</p>
     <div id="messages"></div>
 </body>
 </html>
